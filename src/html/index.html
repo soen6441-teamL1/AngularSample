@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body ng-app="myApp" ng-controller="appController">
+
+    <p>
+        {{text}}
+    </p>
+
+    <ul>
+       <li ng-repeat="item in list">
+           {{item.firstName}} {{item.lastName}}
+        </li>
+    </ul>
+
+    <button ng-click="onButtonClick()">Click me!</button>
+    <!--<script src="../../lib/angular.min.js" type="text/javascript"></script>-->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js" type="text/javascript"></script>
+    <script src="../js/app.js" type="text/javascript"></script>
+</body>
+</html>
